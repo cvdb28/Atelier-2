@@ -1,0 +1,245 @@
+@import url('components9.css');
+
+/* page d'accueil */
+.home-bg{
+    background: url(../img/Myproject.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.home-bg .home{
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.home-bg .home .content{
+    width: 50rem;
+}
+
+.home-bg .home .content span{
+    color: var(--orange);
+    font-size: 2.5rem;
+}
+
+.home-bg .home .content h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    color: var(--black);
+}
+
+.home-bg .home .content p{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--light-color);
+}
+
+.home-bg .home .content a{
+    display: inline-block;
+    width: auto;
+}
+
+
+/* Tâches */
+/* ajout tâches */
+.add-products form{
+    max-width: 70rem;
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+    border-radius: .5rem;
+}
+
+.add-products form .flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.add-products form .flex .inputBox{
+    width: 49%;
+}
+
+.add-products form .box{
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    border: var(--border);
+}
+
+.add-products form textarea{
+    height: 20rem;
+    resize: none;
+} 
+
+
+.show-products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 33rem);
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.show-products .box-container .box{
+    text-align: center;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.show-products .box-container .box .price{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: .5rem;
+}
+
+.show-products .box-container .box img{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.show-products .box-container .box .name{
+    margin: .5rem 2rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.show-products .box-container .box .cat{
+    font-size: 1.8rem;
+    color: var(--green);
+}
+
+.show-products .box-container .box .etat{
+    font-size: 1.8rem;
+    color: var(--red);
+}
+
+.show-products .box-container .box .details{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--light-color);
+}
+
+
+/* contact */
+.contact form{
+    margin: 0 auto;
+    max-width: 50rem;
+    padding: 2rem;
+    text-align: center;
+    border: var(--border);
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding-top: 1rem;
+}
+
+.contact form .box{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    border: var(--border);
+    margin: 1rem 0;
+    background-color: var(--light-bg);
+    font-size: 1.8rem;
+    color: var(--black);
+    border-radius: .5rem;
+}
+
+.contact form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+
+/* Checkout */
+.checkout-orders form{
+    padding: 2rem;
+    border: var(--border);
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.checkout-orders form h3{
+    border-radius: .5rem;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.checkout-orders form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.checkout-orders form .flex .inputBox{
+    width: 49%;
+}
+
+.checkout-orders form .flex .inputBox .box{
+    width: 100%;
+    border: var(--border);
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    padding: 1.2rem 1.4rem;
+    margin: 1rem 0;
+    background-color: var(--light-bg);
+}
+
+.checkout-orders form .flex .inputBox span{
+    font-size: 1.8rem;
+    color: var(--light-color);
+}
+
+
+.placed-orders .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.placed-orders .box-container .box{
+    padding: 1rem 2rem;
+    flex: 1 1 40rem;
+    border: var(--border);
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.placed-orders .box-container .box p{
+    padding: .5rem 0;
+    line-height: 1.8;
+    font-size: 2rem;
+    color: var(--light-color);
+}
+
+.placed-orders .box-container .box p span{
+    color: var(--green);
+}
